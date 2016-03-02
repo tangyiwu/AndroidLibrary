@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/repo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:text="AndroidLibrary"/>
+
+    <TextView
+        android:id="@+id/tv_repo_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_toRightOf="@id/repo_name"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@id/repo_name"
+        android:text="www.baidu.com"/>
+
+    <ImageView
+        android:id="@+id/star_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_stars_blue_a200_18dp"
+        android:layout_below="@id/repo_name"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_star_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_toRightOf="@id/star_icon"
+        android:layout_alignBottom="@id/star_icon"
+        android:layout_marginLeft="10dp"
+        android:text="123"/>
+
+</RelativeLayout>
